@@ -1,0 +1,157 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  --primaryColor: #DCDCDC;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  list-style: none;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.container {
+  width: 80%;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.desc {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+  color: gray;
+}
+
+.card {
+  margin-bottom: 10px;
+}
+
+.card .password {
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: var(--primaryColor);
+  padding: 10px 10px;
+  border-radius: 3px;
+  color: white;
+}
+
+.card .password .output {
+  background-color: transparent;
+  color: gray;
+}
+
+.card .password .icon {
+  color: gray;
+  font-size: 1.3rem;
+}
+
+.card .length {
+  width: 100%;
+  height: 6px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: var(--primaryColor);
+  border-radius: 10px;
+}
+
+.card .length::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+.card .option {
+  margin-bottom: 12px;
+}
+
+.card .button {
+  background-color: gray;
+  border-radius: 3px;
+  width: 100%;
+  padding: 10px;
+  color: var(--primaryColor);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.card .button:active {
+  -webkit-transform: scale(.95);
+  -ms-transform: scale(.95);
+  transform: scale(.95);
+}
+
+.copyright {
+  font-size: .7rem;
+  color: gray;
+}
+
+.toaster {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -200%);
+  -ms-transform: translate(-50%, -200%);
+  transform: translate(-50%, -200%);
+  color: white;
+  padding: 1rem;
+  width: 80%;
+  border-radius: 3px;
+  opacity: 0;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+}
+
+.toaster.active {
+  -webkit-transform: translate(-50%, 30%);
+  -ms-transform: translate(-50%, 30%);
+  transform: translate(-50%, 30%);
+  opacity: 1;
+}
+
+/* Utility Class */
+
+.flex-between-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
